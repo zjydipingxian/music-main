@@ -3,9 +3,9 @@ const resolve = (dir) => path.join(__dirname, dir)
 module.exports = {
   css: {
     loaderOptions: {
-      sass: {
+      scss: {
         // 全局引入变量和 mixin
-        additionalData: `
+        prependData: `
           @import "@/assets/scss/variable.scss";
           @import "@/assets/scss/mixin.scss";
         `
